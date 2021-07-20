@@ -1,0 +1,150 @@
+ul{
+    cursor: pointer;
+}
+
+li{
+    cursor: pointer;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0px 0px 5px 0px;
+}
+
+.gnb__header {
+    height: 50px;
+    box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+    position: relative;
+}
+
+.gnb__header > ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 100%;
+}
+
+.gnb__header > ul > li {
+    margin: 0px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 100%;
+    line-height: 50px;
+}
+
+.gnb__header > ul > li:hover{
+    border-bottom: 2px solid #c9c9c9;
+}
+
+.gnb__header:hover .gnb__main{
+    display: block;
+}
+
+.GNB{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.GNB__group{
+    float: left;
+    width: 16.666%;
+}
+
+.GNB__group > ul{
+    vertical-align: top;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.GNB__group > ul > li {
+    margin: 10px 0px;
+    width: 100%;
+    color: #999;
+    font-size: 13px;
+    text-align: left;
+}
+
+.AI::after {
+    content: "beta";
+    font-size: 10px;
+    color: blue;
+    margin-bottom: 20px;
+    vertical-align: super;
+}
+
+.profile{
+    margin: 0px 10px;
+}
+
+.profile__after {
+    border-right: 1px solid #c9c9c9;
+    width: 10px;
+    height: 10px;
+}
+
+.progile__company{
+    color: #444444;
+    font-size: 12px;
+    margin: 0px 10px;
+    border: 2px solid #c9c9c9;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+.gnb__main {
+    width: 100%;
+    display: none;
+}
+
+.GNB__div{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.profile__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 768px) { 
+    .gnb__header {
+        height: 10%;
+    }
+    .gnb__header > ul {
+        display: inline;
+        justify-content: none;
+    }
+
+    .gnb__header > ul > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+    }
+
+    .profile {
+        display: inline-block;
+    }
+
+    .AI::after {
+        display: none;
+    }
+    .profile__after{
+        display: none;
+    }
+
+    .progile__company{
+        display: none;
+    }
+
+    .profile__box{
+        height: 100%;
+    }
+}
