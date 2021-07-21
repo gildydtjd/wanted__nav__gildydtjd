@@ -167,9 +167,7 @@ function GNB(props) {
                 <div className="progile__company">기업 서비스</div>
                 </div>
             </ul>
-            <div className="gnb__main">
                 <GNBGroup data={data}></GNBGroup>
-                </div>
         </div>
     );
 }
